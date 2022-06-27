@@ -269,9 +269,11 @@ body {
   font-size: 3.2rem;
   color: hsl(158deg, 36%, 37%);
   padding-right: 2.4rem;
+  line-height: 3.2rem;
 }
 .card__price-old {
   font-size: 1.3rem;
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
+  line-height: 2.3rem;
 }/*# sourceMappingURL=main.css.map */

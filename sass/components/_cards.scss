@@ -80,11 +80,13 @@
         font-size: 3.2rem;
         color: a.$dark-cyan;
         padding-right: 2.4rem;
+        line-height: 3.2rem;
     }
 
     &__price-old {
         font-size: 1.3rem;
         color: a.$dark-grayish-blue;
         text-decoration: line-through;
+        line-height: 2.3rem;
     }
 }
