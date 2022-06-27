@@ -60,6 +60,10 @@
         font-size: 3.4rem;
         padding-bottom: 1.6rem;
         line-height: 3.2rem;
+
+        @include a.breakpoint(800,min) {
+            padding-bottom: 2.4rem;
+        }
     }
 
     &__description {
@@ -67,6 +71,10 @@
         color: a.$dark-grayish-blue;
         padding-bottom: 2.4rem;
         line-height: 2.3rem;
+
+        @include a.breakpoint(800,min) {
+            padding-bottom: 2.9rem;
+        }
     }
 
     &__price {
