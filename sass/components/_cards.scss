@@ -48,6 +48,7 @@
         padding-bottom: 1.2rem;
         color: a.$dark-grayish-blue;
         font-size: 1.2rem;
+        line-height: 1.5rem;
 
         @include a.breakpoint(800, min) {
             padding-bottom: 2rem;
