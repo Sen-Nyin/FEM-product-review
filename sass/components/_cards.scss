@@ -1,0 +1,90 @@
+@use '../abstracts'as a;
+@use '../base'as b;
+
+.card {
+    --breakpoint-width: 600;
+    @include a.flex(column, 0, 0);
+    max-width: 34.3rem;
+
+    @include a.breakpoint(800, min) {
+        max-width: 60rem;
+        flex-direction: row;
+    }
+
+    &__content {
+        padding: 2.4rem;
+        background-color: a.$white;
+        border-radius: 0 0 1rem 1rem;
+
+        @include a.breakpoint(800, min) {
+            max-width: 30rem;
+            height: 45rem;
+            border-radius: 0 1rem 1rem 0;
+            padding: 3.2rem;
+        }
+    }
+
+    &__hero {
+        width: 100%;
+        height: 24rem;
+        border-radius: 1rem 1rem 0 0;
+        background-image: url(../../images/image-product-mobile.jpg);
+        background-size: cover;
+
+        @include a.breakpoint(800, min) {
+            height: 45rem;
+            width: 30rem;
+            background-image: url(../../images/image-product-desktop.jpg);
+            background-size: cover;
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+
+    // &__hero-img {}
+
+    &__hero-caption {
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        padding-bottom: 1.2rem;
+        color: a.$dark-grayish-blue;
+        font-size: 1.2rem;
+
+        @include a.breakpoint(800, min) {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 3.1rem;
+        padding-bottom: 1.6rem;
+        line-height: 3.2rem;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        color: a.$dark-grayish-blue;
+        padding-bottom: 2.4rem;
+        line-height: 2.3rem;
+    }
+
+    &__price {
+        @include a.flex(0, flex-start, 0);
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    &__price-now {
+        font-family: 'Fraunces', serif;
+        font-size: 3.2rem;
+        color: a.$dark-cyan;
+        padding-right: 2.4rem;
+    }
+
+    &__price-old {
+        font-size: 1.3rem;
+        color: a.$dark-grayish-blue;
+        text-decoration: line-through;
+    }
+}
