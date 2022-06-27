@@ -73,6 +73,10 @@
         @include a.flex(0, flex-start, 0);
         width: 100%;
         margin-bottom: 2rem;
+
+        @include a.breakpoint(800, min) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__price-now {
