@@ -164,7 +164,7 @@ body {
 }
 
 .btn {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(158deg, 36%, 37%);
@@ -182,7 +182,7 @@ body {
   }
 }
 .btn__icon {
-  margin-right: 1.1rem;
+  margin-right: 1rem;
 }
 .btn:hover {
   background-color: #1A4032;
